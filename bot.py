@@ -29,5 +29,18 @@ def cregis():
 
     return "OK"
 
+@app.route("/test")
+def test():
+
+    requests.post(
+        f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
+        json={
+            "chat_id": GROUP_ID,
+            "text": "🚀 Test message from Render"
+        }
+    )
+
+    return "Sent"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
