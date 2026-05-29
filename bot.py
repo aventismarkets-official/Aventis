@@ -5,7 +5,7 @@ import requests
 
 app = Flask(__name__)
 
-BOT_TOKEN = 8816805339:AAH0Ro98YrXm-fRNpc0gg9tNhIjwOmBT4tk
+BOT_TOKEN = "8816805339:AAH0Ro98YrXm-fRNpc0gg9tNhIjwOmBT4tk"
 GROUP_ID = -5019427352
 
 @app.route("/cregis", methods=["POST"])
